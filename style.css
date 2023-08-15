@@ -1,0 +1,229 @@
+/*
+Theme Name:   Twenty Twenty-One Child-Rubel
+Theme URI: #
+Author: Rubel Ahamed
+Author URI: https://rubelahamed.xyz/
+Description: Child theme for Twenty Twenty-One
+Template: twentytwentyone
+*/
+
+
+/* for custom manu support */
+
+ul.menu {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+ul.menu li a {
+    padding: 20px;
+    color: #1D1D1D;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 26px;
+    display: block;
+}
+
+/* for custom team member support */
+
+.elementor-widget-container .wse-team-members-info>h3 {
+    font-size: 16px;
+    text-align: center;
+    font-weight: 700;
+    padding: 4px;
+}
+
+.elementor-widget-container .wse-team-members-info>p {
+    font-size: 15px;
+    text-align: center;
+    font-weight: normal;
+}
+
+
+.elementor-widget-container .wse-team-member-photo {
+    display: flex;
+    justify-content: center;
+}
+
+.elementor-widget-container .wse-team-members {
+    position: relative;
+    overflow: hidden;
+}
+
+.elementor-widget-container .wse-team-members .hover-text {
+    position: absolute;
+    top: -200px;
+    left: 50%;
+    width: 62%;
+    background-color: #7467808c;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: .4s;
+}
+
+.elementor-widget-container .wse-team-members-style2 .hover-text {
+    position: absolute;
+    top: -200px;
+    left: 50%;
+    width: 62%;
+    background-color: #e455318c;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: .4s;
+}
+
+.elementor-widget-container .wse-team-members-style2:hover .wse-team-member-photo>img {
+    transform: rotate(360deg);
+    transition: .6s;
+}
+
+.elementor-widget-container .wse-team-members:hover .hover-text {
+    top: 0px;
+    opacity: 1;
+}
+
+.elementor-widget-container .wse-team-members:hover .social-links {
+    opacity: 1;
+}
+
+.elementor-widget-container .wse-team-members .social-links {
+    position: absolute;
+    top: 43px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+    opacity: 0;
+}
+
+.elementor-widget-container .wse-team-members .social-links>a {
+    font-size: 12px;
+    color: white;
+    padding: 3px;
+    margin: 0px 3px;
+}
+
+.elementor-widget-container .wse-team-members .hover-text>h3 {
+    font-size: 15px;
+    text-align: center;
+    padding: 10px;
+    color: white;
+    font-weight: 600;
+    margin-top: 61px;
+}
+
+.elementor-widget-container .wse-team-members .hover-text>p {
+    font-size: 14px;
+    text-align: center;
+    color: white;
+    line-height: 20px;
+    font-weight: 400;
+}
+
+
+/* for promo boxes */
+
+
+.elementor-widget-container .promo-boxes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.elementor-widget-container .promo-boxes .single-promo-boxes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #fffcf8;
+    width: 265px;
+    margin: 14px 5px 35px 5px;
+    padding: 17px 6px;
+    border: 1px solid #b4ae9f;
+    border-radius: 18px;
+}
+
+.elementor-widget-container .promo-boxes .single-promo-boxes>h4 {
+    font-size: 16px;
+    color: #dfdad7;
+}
+
+.elementor-widget-container .promo-boxes .single-promo-boxes>h3 {
+    font-size: 24px;
+    color: #0e0b08;
+    font-weight: 500;
+}
+
+.elementor-widget-container .promo-boxes .single-promo-boxes .promo-box-star {
+    font-size: 12px;
+    color: #8e826f;
+}
+
+.elementor-widget-container .promo-boxes .single-promo-boxes .single-promo-image {
+    margin: 10px 0px;
+}
+
+.elementor-widget-container .promo-boxes .single-promo-boxes a.single-promo-btn {
+    padding: 10px 20px;
+    background-color: #9b866b;
+    border-radius: 4px;
+    color: #fff;
+    border: 1px solid #a69d8e;
+    margin: 7px 0px;
+    font-size: 14px;
+    display: inline-block;
+    transition: .6s;
+}
+
+.elementor-widget-container .promo-boxes .single-promo-boxes a.single-promo-btn:hover {
+    background-color: #fff;
+    color: #a69d8e;
+}
+
+.elementor-widget-container .promo-boxes .single-promo-boxes a.single-promo-btn2 {
+    padding: 10px 20px;
+    background-color: #fff;
+    border-radius: 4px;
+    color: #a69d8e;
+    border: 1px solid #a69d8e;
+    margin: 7px 0px;
+    font-size: 14px;
+    display: inline-block;
+    transition: .6s;
+}
+
+.elementor-widget-container .promo-boxes .single-promo-boxes a.single-promo-btn2:hover {
+    background-color: #9b866b;
+    color: #fff;
+}
+
+
+/* for slick slider arrow/button redesign support */
+
+.elementor-widget-container .promo-boxes ul.slick-dots button {
+    display: none;
+}
+
+.elementor-widget-container .promo-boxes ul.slick-dots li {
+    height: 5px;
+    width: 100px;
+    list-style: none;
+    display: flex;
+    position: relative;
+    top: -3.5px;
+}
+
+.elementor-widget-container .promo-boxes ul.slick-dots {
+    display: flex;
+    border-top: 2px solid #d1c018;
+}
+
+.elementor-widget-container .promo-boxes li.slick-active {
+    background-color: #000;
+}
